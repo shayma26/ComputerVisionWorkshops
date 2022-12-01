@@ -1,3 +1,4 @@
+#mount google drive to get access to train data and test data
 from google.colab import drive
 drive.mount('/content/drive')
 
@@ -14,7 +15,8 @@ from imutils import paths
 import imutils
 from sklearn.decomposition import PCA
 
-	# Function to compute histogram from LBP features
+
+# Function to compute histogram from LBP features
 def compute_lbp(image, eps=1e-7,numPoints=24,radius=8):
 		# compute the Local Binary Pattern representation
 		# of the image, and then use the LBP representation
@@ -32,7 +34,7 @@ def compute_lbp(image, eps=1e-7,numPoints=24,radius=8):
 
 
 
-# Feature extraction   from the training data with the corresponding labels
+# Feature extraction from the training data with the corresponding labels
 
 print("[INFO] Extracting different features:  Raw Pixel values from image/Color Histogram/HOG/LBP")
 train_data_hog=[]
